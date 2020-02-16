@@ -1,2 +1,7 @@
-requests==2.9.1
 dotenv
+requests
+aiohttp
+botbuilder
+botbuilder-dialogs>=4.4.0.b1
+botbuilder-ai>=4.4.0.b1
+flask>=1.0.3

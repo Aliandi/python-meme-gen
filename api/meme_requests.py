@@ -2,7 +2,7 @@ import requests
 from settings import Config
 
 
-class MemeWrapper:
+class MemeRequests:
 
     @staticmethod
     def get_memes() -> dict:
@@ -33,7 +33,7 @@ class MemeWrapper:
             "template_id": meme_id,
             "text0": text_up,
             "text1": text_down,
-            "username": 'aliandi',
-            "password": 'fibo10946',
+            "username": Config.USER,
+            "password": Config.PASSWORD,
         }
         return requests.get("https://api.imgflip.com/caption_image", params=params).json()
